@@ -5,8 +5,9 @@
     <test name="Test Login">
 
         <classes>
-            <class name="Tests.ui.TestLogin"></class>
-            <class name="Tests.ui.TestLogin2"></class>
+            <class name="Tests.api.AnnotationExecution0rder"/>
+            <class name="Tests.api.ExecutonOrder"/>
+            <class name="Tests.ui.TestLogin2"/>
 
         </classes>
 

@@ -4,11 +4,12 @@
 
     <test name="Test Login">
 
-        <classes>
-            <class name="Tests.ui.TestLogin"></class>
-            <class name="Tests.ui.TestLogin2"></class>
-
-        </classes>
+        <packages>
+            
+            <package name="Tests.ui"></package>
+            <package name="Tests.api"></package>
+            
+        </packages>
 
     </test>
 

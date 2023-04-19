@@ -1,4 +1,4 @@
-package Tests;
+package Tests.ui;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -12,7 +12,7 @@ public class TestLogin2 {
 
 
     WebDriver driver;
-    @BeforeMethod
+    @BeforeMethod(alwaysRun = true)
     public void setUpEachMethod(){
 
         driver = new ChromeDriver();
@@ -22,7 +22,7 @@ public class TestLogin2 {
 
     }
 
-    @AfterMethod
+    @AfterMethod(alwaysRun = true)
     public void tearDownMethod() {
         driver.quit();
     }
@@ -42,7 +42,7 @@ public class TestLogin2 {
 
     }
 
-    @Test
+    @Test(groups = {"smoke"})
     public void testLogin2() throws InterruptedException {
 
 
@@ -57,7 +57,7 @@ public class TestLogin2 {
 
     }
 
-    @Test
+    @Test(groups = "flaky")
     public void testLogin3() throws InterruptedException {
 
 

@@ -1,4 +1,4 @@
-package Tests;
+package Tests.api;
 
 import org.testng.annotations.*;
 
@@ -16,11 +16,8 @@ public class AnnotationExecution0rder {
 
     @BeforeMethod
     public void setUpEachMethod() {
-
         System.out.println("Befote Method");
     }
-
-
 
     @AfterMethod
     public void setUpEachMethodsdv(){
@@ -45,7 +42,7 @@ public class AnnotationExecution0rder {
         System.out.println("After Test");
     }
 
-    @Test
+    @Test(groups = {"smoke"})
     public void methdod1 () {
         System.out.println("Test 1");
     }
